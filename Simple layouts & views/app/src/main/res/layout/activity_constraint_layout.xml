@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutScreens.ConstraintLayout"
+    android:padding="8sp">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Place"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur First Name"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur Last Name"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/fName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur Age"
+        android:textSize="16sp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/lName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur country"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonApply"
+        app:layout_constraintHorizontal_weight="3"/>
+
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/country"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHorizontal_weight="1"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutScreens.RelativeLayout"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Place"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur First Name"
+        android:textSize="16sp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur Last Name"
+        android:textSize="16sp"
+        android:layout_below="@id/etFirstName"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur Age"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_below="@id/etLastName"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_below="@id/etAge"
+        android:layout_alignParentEnd="true"
+        android:minWidth="100dp"/>
+
+    <EditText
+        android:id="@+id/etCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ur country"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_below="@id/etAge"
+        android:layout_toStartOf="@id/btnApply"
+        android:layout_marginEnd="8dp"/>
+
+</RelativeLayout>
