@@ -11,6 +11,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     lateinit var drawerLayout: DrawerLayout
@@ -29,9 +31,34 @@ class MainActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val items = listOf(
+            Item("Note 1", "Description for note 1"),
+            Item("Note 2", "Description for note 2"),
+            Item("Note 3", "Description for note 3"),
+            Item("Note 4", "Description for note 4"),
+            Item("Note 5", "Description for note 5"),
+            Item("Note 6", "Description for note 6"),
+            Item("Note 7", "Description for note 7"),
+            Item("Note 8", "Description for note 8"),
+            Item("Note 9", "Description for note 9"),
+            Item("Note 10", "Description for note 10"),
+            Item("Note 11", "Description for note 11"),
+            Item("Note 12", "Description for note 12"),
+            Item("Note 13", "Description for note 13"),
+            Item("Note 14", "Description for note 14"),
+            Item("Note 15", "Description for note 15"),
+            Item("Note 16", "Description for note 16")
+        )
+
+
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = SimpleAdapter(items)
+
 
         dialog_btn.setOnClickListener {
-         showAlertDialog()
+            showAlertDialog()
+
         }
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -54,4 +81,7 @@ class MainActivity : AppCompatActivity() {
         val alertDialog: AlertDialog = builder.create()
         alertDialog.show()
     }
+
+
 }
+
