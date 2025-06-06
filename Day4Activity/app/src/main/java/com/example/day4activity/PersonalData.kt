@@ -18,3 +18,4 @@ class PersonalData : AppCompatActivity() {
         }
     }
 }
+
