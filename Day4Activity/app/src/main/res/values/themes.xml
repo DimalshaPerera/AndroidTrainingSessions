@@ -6,6 +6,7 @@
 
         <item name="colorPrimary">@android:color/black</item>
         <item name="colorOnPrimary">@android:color/white</item>
+
     </style>
 
     <style name="Theme.Day4Activity" parent="Base.Theme.Day4Activity" />

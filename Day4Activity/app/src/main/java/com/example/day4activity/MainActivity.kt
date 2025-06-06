@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             binding.toolbar,
             R.string.nav_open,
             R.string.nav_close
+
         )
 
         binding.drawerLayout.addDrawerListener(actionBarDrawerToggle)
