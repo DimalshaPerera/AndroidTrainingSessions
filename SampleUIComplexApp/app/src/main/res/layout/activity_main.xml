@@ -33,12 +33,19 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/dialog_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:text="Dialog Box view" />
+<!--                <Button-->
+<!--                    android:id="@+id/dialog_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:text="Dialog Box view" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/Bottom_sheet_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:text="Show Bottom Sheet" />-->
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"
