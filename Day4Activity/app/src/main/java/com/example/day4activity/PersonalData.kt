@@ -17,7 +17,7 @@ class PersonalData : AppCompatActivity() {
             val binding = ActivityPersonalDataBinding.inflate(layoutInflater)
             setContentView(binding.root)
             binding.backButton.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Profile::class.java)
                 startActivity(intent)
                 finish()
             }

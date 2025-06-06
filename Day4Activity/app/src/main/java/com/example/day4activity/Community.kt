@@ -16,7 +16,7 @@ class Community : AppCompatActivity() {
         val binding = ActivityCommunityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.backbtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
             finish()
         }
