@@ -1,20 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardBackgroundColor="@color/blue"
     app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
-    >
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="30dp">
 
         <TextView
             android:id="@+id/textView9"
@@ -33,7 +32,7 @@
             android:layout_marginBottom="12dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin mollis eros quis dapibus. Proin non gravida eros, vel vehicula purus. Maecenas tempor tristique suscipit. Proin et eros venenatis, semper ante eu, faucibus lorem. Donec condimentum sem non commodo sagittis. Nullam hendrerit finibus condimentum. Etiam a justo finibus, laoreet leo id, tincidunt justo. Etiam sed bibendum libero."
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin mollis eros quis dapibus."
             android:textColor="#666666"
             android:textSize="14sp" />
 
@@ -44,6 +43,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/avatarContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -96,6 +96,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/joinForumLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
