@@ -3,5 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">	#A9A9A9</color>
-    <color name="blue">#E3F2FD</color>
+    <color name="blue">#f0f3fd</color>
+    <color name="date_picker_primary">#2196F3</color>
+    <color name="date_picker_accent">#1976D2</color>
 </resources>

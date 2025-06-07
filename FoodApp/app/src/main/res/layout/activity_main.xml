@@ -7,13 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/beef_burger" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--<ConstraintLayout>-->
+<!--<ScrollView>-->
+<!--    <LinearLayout orientation="vertical">-->
+<!--        <FrameLayout> &lt;!&ndash; Image section &ndash;&gt;-->
+<!--            <ImageView /> &lt;!&ndash; Burger image &ndash;&gt;-->
+<!--            <ImageButton /> &lt;!&ndash; Back button &ndash;&gt;-->
+<!--            <ImageButton /> &lt;!&ndash; Profile icon &ndash;&gt;-->
+<!--        </FrameLayout>-->
+
+<!--        <CardView> &lt;!&ndash; Content card &ndash;&gt;-->
+<!--            <LinearLayout orientation="vertical">-->
+<!--                &lt;!&ndash; Title/Price row &ndash;&gt;-->
+<!--                &lt;!&ndash; Rating row &ndash;&gt;-->
+<!--                &lt;!&ndash; Description &ndash;&gt;-->
+<!--                &lt;!&ndash; Extras list &ndash;&gt;-->
+<!--            </LinearLayout>-->
+<!--        </CardView>-->
+<!--    </LinearLayout>-->
+<!--</ScrollView>-->
+<!--</ConstraintLayout>-->

@@ -45,6 +45,7 @@ class PersonalData : AppCompatActivity() {
 
         val datePickerDialog = DatePickerDialog(
             this,
+            R.style.CustomDatePickerTheme,
             { _, selectedYear, selectedMonth, selectedDay ->
                 val months = arrayOf(
                     "January", "February", "March", "April", "May", "June",
