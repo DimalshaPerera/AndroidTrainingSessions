@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.foodapp"
     compileSdk = 35
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.foodapp"
         minSdk = 30
@@ -25,6 +27,8 @@ android {
                 "proguard-rules.pro"
             )
         }
+
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
