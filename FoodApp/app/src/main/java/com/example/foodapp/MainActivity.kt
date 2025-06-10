@@ -19,5 +19,11 @@ class MainActivity : AppCompatActivity() {
             val intent= Intent(this,BurgerView::class.java)
             startActivity(intent)
     }
+
+
+        binding.homeButton.setOnClickListener{
+            val intent= Intent(this,Home::class.java)
+            startActivity(intent)
+        }
     }
 }

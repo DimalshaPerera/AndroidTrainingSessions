@@ -13,6 +13,10 @@
         android:theme="@style/Theme.FoodApp"
         tools:targetApi="31">
         <activity
+            android:name=".Home"
+            android:exported="false"
+            android:theme="@style/Theme.FoodApp" />
+        <activity
             android:name=".BurgerView"
             android:exported="false" />
         <activity
