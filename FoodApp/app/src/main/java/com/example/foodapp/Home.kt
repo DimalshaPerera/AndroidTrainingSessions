@@ -30,8 +30,7 @@ class Home : AppCompatActivity() {
             FoodItem(1, "Pepperoni Pizza", "$16.00", R.drawable.pizza2, "#FFE4B5"),
             FoodItem(2, "Bolognese Pasta", "$16.00", R.drawable.pizza2, "#FFB6C1"),
             FoodItem(3, "Margherita Pizza", "$16.00", R.drawable.pizza2, "#98FB98"),
-            FoodItem(4, "Margherita Pizza", "$16.00", R.drawable.pizza2, "#98FB98"),
-            FoodItem(5, "Margherita Pizza", "$16.00", R.drawable.pizza2, "#98FB98"),
+
         )
         foodAdapter = FoodAdapter(foodItems) { foodItem ->
             Toast.makeText(this, "Clicked: ${foodItem.name}", Toast.LENGTH_SHORT).show()

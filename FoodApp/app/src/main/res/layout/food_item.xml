@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/foodCard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         app:cardBackgroundColor="#90EE90"
         app:cardCornerRadius="40dp"
