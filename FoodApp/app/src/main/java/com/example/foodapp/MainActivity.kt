@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
             val intent= Intent(this,Home::class.java)
             startActivity(intent)
         }
+
+        binding.listButton.setOnClickListener{
+            val intent= Intent(this,ListView::class.java)
+            startActivity(intent)
+        }
     }
 }
