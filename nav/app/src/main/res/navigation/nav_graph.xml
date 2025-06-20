@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.nav.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/goingtosignup"
+            app:destination="@id/signUpFragment"
+ />
+        <action
+            android:id="@+id/loginTodashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/loginToVerification"
+            app:destination="@id/otp" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.nav.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/goingToOtp"
+            app:destination="@id/otp" />
+    </fragment>
+    <fragment
+        android:id="@+id/otp"
+        android:name="com.example.nav.Verification"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/goingToDashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/OTPToReset"
+            app:destination="@id/resetPwFragment" />
+        <argument
+            android:name="Type"
+            app:argType="string"
+            android:defaultValue="SignUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.nav.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <argument
+            android:name="userEmail"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resetPwFragment"
+        android:name="com.example.nav.ResetPwFragment"
+        android:label="fragment_reset_pw"
+        tools:layout="@layout/fragment_reset_pw" >
+        <action
+            android:id="@+id/goingToDash"
+            app:destination="@id/dashBoardFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.nav.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/splashtoLogin"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

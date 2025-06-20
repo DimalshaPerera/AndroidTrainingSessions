@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.foodapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,8 +25,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.listButton.setOnClickListener{
-            val intent= Intent(this,ListView::class.java)
+            val intent= Intent(this,TabLayoutView::class.java)
             startActivity(intent)
         }
+//        binding.list2Button.setOnClickListener{
+//            val intent= Intent(this,TabLayout::class.java)
+//            startActivity(intent)
+//        }
     }
 }

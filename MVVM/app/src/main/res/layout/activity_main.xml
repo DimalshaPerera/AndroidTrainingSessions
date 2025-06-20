@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:bind="http://schemas.android.com/tools">
+
+<data>
+    <variable
+        name="viewModel"
+        type="com.example.mvvm.ViewModel"/>
+</data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/inEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your Email ID"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:text="@={viewModel.userEmail}" />
+
+    <EditText
+        android:id="@+id/inPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:text="@={viewModel.userPasssword}" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="@{()-> viewModel.onButtonClicked()}"
+        android:text="Login"
+        android:textSize="24sp"
+        bind:toastMessage="@{viewModel.toastMsg}" />
+
+</LinearLayout>
+</layout>
