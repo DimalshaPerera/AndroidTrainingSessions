@@ -161,7 +161,6 @@
 
         </LinearLayout>
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/foodRecyclerView"
             android:layout_width="match_parent"
@@ -170,23 +169,20 @@
             android:nestedScrollingEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bestSellersHeader"
-            tools:listitem="@layout/food_item" />
+            app:layout_constraintTop_toBottomOf="@+id/bestSellersHeader" />
 
         <LinearLayout
             android:id="@+id/seeHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/foodRecyclerView"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/foodRecyclerView">
 
             <TextView
                 android:id="@+id/seeAllTitle"
@@ -214,16 +210,17 @@
                 android:src="@drawable/baseline_arrow_forward_ios_24"
                 app:tint="@color/dark_gray" />
 
-
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/button_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/seeHeader"
-            tools:layout_editor_absoluteY="900dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seeHeader">
 
             <Button
                 android:id="@+id/button5"
@@ -290,8 +287,7 @@
                     android:layout_height="180dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/pizza"
-                    android:layout_marginBottom="8dp"
-                    />
+                    android:layout_marginBottom="8dp" />
 
                 <TextView
                     android:id="@+id/pizzaTitle"
@@ -306,5 +302,6 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

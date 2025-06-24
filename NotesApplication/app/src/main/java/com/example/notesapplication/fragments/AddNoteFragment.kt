@@ -62,6 +62,7 @@ class AddNoteFragment : Fragment(R.layout.fragment_add_note) ,MenuProvider{
         val noteDesc=binding.addNoteDesc.text.toString().trim()
 
         if (noteTitle.isNotEmpty()){
+            //correct this auto increment
             val note= Note(0,noteTitle,noteDesc)
             notesViewModel.addNote(note)
 

@@ -76,7 +76,7 @@ class EditNoteFragment : Fragment(R.layout.fragment_edit_note), MenuProvider {
             setPositiveButton("Delete") { _, _ ->
                 notesViewModel.deleteNote(currentNote)
                 Toast.makeText(context, "Note deleted", Toast.LENGTH_SHORT).show()
-                // Fix 3: Correct syntax for safe navigation
+
                 view?.findNavController()?.popBackStack(R.id.homeFragment, false)
             }
             setNegativeButton("Cancel", null)
