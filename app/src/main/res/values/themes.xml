@@ -2,4 +2,8 @@
 <resources>
 
     <style name="Theme.HILT" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.PureDependency" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.HiltSample" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "HILT"
 include(":app")
+include(":app")
+include(":app")
+include(":app")
  
